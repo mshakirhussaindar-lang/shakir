@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakir Hussain | Premium Web Developer</title>
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins (modern font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Particles.js for background effect -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Vanilla Tilt.js for 3D cards -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+       
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SD</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">Welcome to my portfolio</span>
+            <h1>Hi, I'm <span class="highlight">Shakir Hussain</span></h1>
+            <div class="typed-text"></div>
+            <p>I craft exceptional digital experiences that make businesses stand out. Specialized in creating modern, responsive, and high-performance websites.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                <a href="#projects" class="btn btn-outline">View Work</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="shakir.jpg" alt="Shakir Hussain">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate web developer with over 5 years of experience creating stunning websites for clients worldwide. My journey in web development started when I built my first website at the age of 15, and since then, I've never looked back.</p>
+                <p>I specialize in creating responsive, user-friendly websites that not only look great but also perform exceptionally well. My goal is to help businesses establish a strong online presence through modern web solutions.</p>
+                <p>When I'm not coding, you can find me contributing to open-source projects, writing tech blogs, or exploring new technologies.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item" data-tilt>
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-wordpress"></i>
+                <h3>WordPress</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <i class="fab fa-node"></i>
+                <h3>Node.js</h3>
+                <div class="skill-level">
+                    <div class="skill-level-bar" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="project-img">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A fully responsive e-commerce website with cart functionality and payment integration.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="daraz.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="project-img">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Business Dashboard</h3>
+                    <p>Analytics dashboard with real-time data visualization and reporting features.</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span>
+                        <span>D3.js</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="Dashboard.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+                <div class="project-img">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Mobile App Landing</h3>
+                    <p>Modern landing page for a mobile application with smooth animations.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="neyon.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item" data-tilt data-tilt-max="5" data-tilt-speed="300">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>mshakirhussaindar@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-tilt data-tilt-max="5" data-tilt-speed="300">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>+92-3554411600</p>
+                    </div>
+                </div>
+                <div class="contact-item" data-tilt data-tilt-max="5" data-tilt-speed="300">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Skardu, Pakistan</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" data-tilt data-tilt-max="5" data-tilt-speed="300"><i class="fab fa-github"></i></a>
+                    <a href="#" data-tilt data-tilt-max="5" data-tilt-speed="300"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" data-tilt data-tilt-max="5" data-tilt-speed="300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-tilt data-tilt-max="5" data-tilt-speed="300"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Shakir Hussain. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for amazing clients</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="portfolio.js"></script>
+</body>
+</html>
